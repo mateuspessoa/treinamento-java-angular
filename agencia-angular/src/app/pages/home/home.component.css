@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  height: 737px;
+  align-items: center;
+}
+
+.saque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 150px;
+  height: 737px;
+}
+
+.card-saque {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 50%;
+  background-color: #00ac4b4b;
+  border-radius: 15px;
+}
+
+.logo-saque {
+  width: 160px;
+  height: 160px;
+  margin-top: 50px;
+}
+
+.btn-sacar {
+  margin-top: 50px;
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #00ac4d;
+  color: white;
+}
+
+.deposito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 737px;
+}
+
+.card-deposito {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 50%;
+  background-color: #00ac4b4b;
+  border-radius: 15px;
+}
+
+.logo-deposito {
+  width: 140px;
+  height: 140px;
+  margin-top: 50px;
+}
+
+.btn-depositar {
+  margin-top: 70px;
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #00ac4d;
+  color: white;
+
+}
+
+.transferencia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 737px;
+}
+
+.card-transferencia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 50%;
+  background-color: #00ac4b4b;
+  border-radius: 15px;
+}
+
+.logo-transferencia {
+  width: 160px;
+  height: 160px;
+  margin-top: 50px;
+}
+
+.btn-transferir {
+  margin-top: 50px;
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #00ac4d;
+  color: white;
+}
+
+

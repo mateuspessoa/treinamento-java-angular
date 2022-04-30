@@ -1,0 +1,40 @@
+<section>
+  <div class="saque">
+    <div class="card-saque">
+      <div class="titulo">
+        <h1>Transferência</h1>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="transferencia()">
+        <div class="parte-1">
+          <div class="input-saque">
+            <label>Agência de Origem</label>
+            <input type="text" placeholder="Número da agência de Origem" formControlName="agenciaOrigem">
+          </div>
+          <div class="input-saque">
+            <label>Agência de Destino</label>
+            <input type="text" placeholder="Número da agência de Destino" formControlName="agenciaDestino">
+          </div>
+        </div>
+
+        <div class="parte-2">
+          <div class="input-saque">
+            <label>Conta de Origem</label>
+            <input type="text" placeholder="Número da conta de Origem" formControlName="numeroContaOrigem">
+          </div>
+          <div class="input-saque">
+            <label>Conta de Destino</label>
+            <input type="text" placeholder="Número da conta de Destino" formControlName="numeroContaDestino">
+          </div>
+        </div>
+
+        <div class="input-saque">
+          <label>Valor</label>
+          <input type="text" placeholder="Digite o valor" formControlName="valor" currencyMask>
+        </div>
+
+        <button type="submit" [disabled]="!form.valid">Transferir</button>
+      </form>
+    </div>
+  </div>
+</section>
+

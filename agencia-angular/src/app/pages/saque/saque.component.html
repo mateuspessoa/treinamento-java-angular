@@ -1,0 +1,27 @@
+<section>
+  <div class="saque">
+    <div class="card-saque">
+      <div class="titulo">
+        <h1>Saque</h1>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="sacar()">
+        <div class="input-saque">
+          <label>Agência</label>
+          <input type="text" placeholder="Número da agência" formControlName="agencia">
+        </div>
+
+        <div class="input-saque">
+          <label>Conta</label>
+          <input type="text" placeholder="Número da conta" formControlName="numeroConta">
+        </div>
+
+        <div class="input-saque">
+          <label>Valor</label>
+          <input type="text" placeholder="Digite o valor" formControlName="valor" currencyMask>
+        </div>
+
+        <button type="submit" [disabled]="!form.valid">Sacar</button>
+      </form>
+    </div>
+  </div>
+</section>

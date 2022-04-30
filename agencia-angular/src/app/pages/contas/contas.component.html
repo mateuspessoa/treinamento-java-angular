@@ -1,0 +1,34 @@
+<div class="contas">
+  <div class="paragrafo">
+    <p>Minhas Contas</p>
+  </div>
+</div>
+
+<div class="tabela">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Agência</th>
+        <th scope="col">Número</th>
+        <th scope="col">Saldo</th>
+        <th scope="col">Nome</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let conta of contas">
+        <th scope="row">{{ conta.agencia }}</th>
+        <td>{{ conta.numero }}</td>
+        <td>R$ {{ conta.saldo }},00</td>
+        <td>{{ conta.cliente.nome }}</td>
+        <td>{{ conta.cliente.email }}</td>
+        <td><button class="excluir">X</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section-2">
+  <a routerLink="/cadastro"><button>Cadastar Conta</button></a>
+</div>

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  background-color: #006CAC;
+  height: 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  margin-right: 40px;
+  font-size: 18px;
+}
+
+.cadastro button {
+  border: none;
+  width: 170px;
+  height: 40px;
+  border-radius: 20px;
+  color: #00688b;
+  background-color: white;
+  font-weight: bold;
+}
